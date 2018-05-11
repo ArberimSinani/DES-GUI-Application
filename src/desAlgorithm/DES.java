@@ -1,5 +1,4 @@
 package desAlgorithm;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -11,7 +10,6 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.security.spec.InvalidKeySpecException;
 import java.util.Random;
-
 import javax.crypto.Cipher;
 import javax.crypto.CipherInputStream;
 import javax.crypto.CipherOutputStream;
@@ -52,6 +50,7 @@ public class DES {
 				out.close();
 				in.close();
 			}
+			//Key generator 
 			public char[] randomKeyGen() {
 				Random rnd = new Random();
 				char[] randomKey = new char[8];
